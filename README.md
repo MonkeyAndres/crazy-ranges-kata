@@ -14,6 +14,19 @@ Also the ranges follow some special rules:
 - Range components are always going to be positive
 - Always asume that the starting component is going to be prior to the second one (if you feel brave enough you can skip this rule)
 
+## Usage
+
+```sh
+# Clone the repo
+git clone https://github.com/MonkeyAndres/crazy-ranges-kata.git
+
+# Install dependencies
+npm install
+
+# Run tests
+npm test
+```
+
 ## Expanding ranges
 
 Write a function that could transform a range definition into a list of all the items inside the range.
