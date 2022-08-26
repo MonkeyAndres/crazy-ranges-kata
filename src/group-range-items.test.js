@@ -68,8 +68,6 @@ const scenarios = [
   },
 ]
 
-const invalidScenarios = ['A1-1', 'A1-1', 'A1-1A']
-
 describe('groupRangeItems()', () => {
   for (let { enabled, input, expected } of scenarios) {
     if (!enabled) {
@@ -82,12 +80,6 @@ describe('groupRangeItems()', () => {
       expect(Array.isArray(output)).toBeTruthy()
       expect(output).toHaveLength(expected.length)
       expect(output.sort()).toEqual(expected.sort())
-    })
-  }
-
-  for (let input of invalidScenarios) {
-    it(`Invalid case: "${input}"`, () => {
-      expect(() => groupRangeItems(input)).toThrow()
     })
   }
 })
