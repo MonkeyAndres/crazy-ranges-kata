@@ -14,6 +14,8 @@ Also the ranges follow some special rules:
 - Range components are always going to be positive
 - Always asume that the starting component is going to be prior to the second one (if you feel brave enough you can skip this rule)
 
+> If you feel like this katas are too easy for you try implementing a solution differently, maybe use some functional programing or do it with OOP. Furthermore, code quality is valued a lot so try to run your solution as clean as possible following good practices.
+
 ## Usage
 
 ```sh
@@ -38,8 +40,14 @@ Requirements:
 
 > You can see more examples in the [written test](./src/expand-crazy-ranges.test.js) for this ranges. Feel free to edit and add your own tests and special cases to ensure that the function is well tested.
 
-If you feel like this katas are too easy for you try implementing a solution differently, maybe use some functional programing or do it with OOP. Furthermore, code quality is valued a lot so try to run your solution as clean as possible following good practices.
-
 ## Contract existing ranges
 
-Coming soon!
+Write a function that could group some range items into a range when needed.
+
+Requirements:
+- For numeric items like `[1, 2, 3]` we should group them as `[1-3]`
+- For mixed ranges like `[A1, A2, A3]` we should group `[A1-A3]`
+- For mixed ranges like `[A1, A2, A3, B1, B2, B3]` we should group `[A1-A3, B1-B3]`
+- The `groupRangeItems` function should ALWAYS return an array
+
+> You can see more examples in the [written test](./src/group-range-items.test.js). Feel free to edit and add your own tests and special cases to ensure that the function is well tested.
